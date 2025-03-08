@@ -1,0 +1,200 @@
+@font-face {
+    font-family: sl;
+    src: url(./SuisseIntl-Light\ \(1\).ttf);
+    
+}
+@font-face {
+    font-family: sr;
+    src: url(./Poppins-Regular\ \(1\).ttf);
+}
+@font-face {
+    font-family: pr;
+    src: url(./Poppins-Regular\ \(1\).ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "sr";
+
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+}
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: dadada;
+    position: absolute; 
+}
+#cursor{
+    height: 7.5vw;
+    width: 7.5vw;
+    background-color: #FF5F38;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+}
+#cursor h5{
+    font-size: 1.15vw;
+    font-weight: 500;
+}
+#page1 video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+#page1-content{
+    height: 100%;
+    width: 100%;
+    /* background-color: black; */
+    position: relative;
+    z-index: 10;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 2vh;
+}
+nav{
+   /* height: 100px; */
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width : 100%;
+   /* background-color: red; */
+   padding: 3vw 3vw;
+   /* position: fixed; */
+
+}
+
+nav h3{
+    font-size: 1.4vw;
+    font-weight: 500;
+}
+nav h4{
+    font-size: 1.4vw;
+    font-weight: 100;
+}
+#page1-content h1{
+    font-family: "sr";
+    font-size: 27vw;
+    font-weight: 100;
+    line-height: 27vw;
+}
+#page1-content h1 span{
+    font-family: "sl";
+
+}
+
+#page2{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: pink; */
+    
+}
+
+#page2-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vh 2vw;
+    border-bottom: 0.1px solid black;
+    margin-top: 5vh;
+
+}
+#page2-top-left h5{
+    font-family: sl;
+    font-size: 2vw;
+    font-weight: 100;
+}
+#page2-top-right h5{
+    font-family: sl;
+    font-size: 2vw;
+    font-weight: 100;
+}
+#page2-center p{
+    font-family: sl;
+    padding: 5vh 2vw;
+    font-size: 5vw;
+    font-weight: 500;
+}
+
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 3vw;
+}
+
+#page3-top{
+    text-align: center;
+}
+#page3-top h4{
+     margin-bottom: 1vw;
+     font-size: 1vw;
+     font-weight: 500;
+}
+#page3-top h4 span
+{
+    font-size: 0.7vw ;
+    color: white;
+    background-color: black;
+    padding: 2px 4px;
+    border-radius: 10px;
+}
+#page3-top h2{
+    font-size: 4vw;
+    font-size: 500;
+}
+#page3-elements{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8vw;
+}
+#page3-elements .box{
+    height: 100%;
+    width: 32.5%;
+    position: relative;
+    
+}
+#page3-elements .box video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#page3-elements .box img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all linear 0.8s;
+}
+#page3-elements .box:hover img{
+    opacity: 0;
+}
+
+#page4
+{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
